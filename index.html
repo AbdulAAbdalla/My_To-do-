@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Task Schedule</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="heading">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1683880731615-ecbf67bf7a8f?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="image"
+          class="heading_img"
+        />
+        <h1 class="heading_title">My-Tasks' Schedule</h1>
+      </div>
+      <form class="form">
+        <div>
+          <label for="MyTask"class="form_label">~ Tasks for Today ~</label>
+          <input
+            type="text"
+            class="form_input"
+            id="MyTask"
+            name="My-Task"
+            size="40"
+            required
+          />
+          <button class="button"><span>Submit</span></button>
+        </div>
+      </form>
+      <div>
+        <ul class="MyTaskSchedule"></ul>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

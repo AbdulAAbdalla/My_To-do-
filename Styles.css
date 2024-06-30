@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro'); /*importing font into css file.*/
+  body{ 
+  background-color: #24bffb;
+  min-height: 70vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1f191e;
+  font-family:'Crimson Pro', serif;
+  text-align: center;
+  font-size: 130%;
+
+}
+
+/*Applying responsiveness*/
+@media only screen and (min-width: 500px) {
+  body {
+    min-height: 100vh;
+  }
+}
+/*Applying styling under section class called Container in the html file.*/
+.container {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  max-width: 500px;
+  min-width: 250px;
+  background: #f1f5f8;
+  background-image: radial-gradient(#eb45c100, 7.2%, transparent 0);
+  background-size: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 4px 3px 7px 2px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+/*Applying styling for class:heading in the html file*/
+.heading {
+  display: flex; /* This is to set display to responsive hence flex option*/
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/*Applying specific to the heading title of the html fle*/
+.heading_title {
+  transform: rotate(6deg);
+  padding: 0.2rem 1.2rem;
+  border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+  background-color: #d3f14b(255, 0, 170, 0.7);
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .heading_title {
+    font-size: 1.5rem;
+  }
+}
+.heading_img {
+  width: 40%;
+}
+.form_label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.form_input {
+  box-sizing: border-box;
+  background-color: #bdb7bd;
+  padding: 0.5rem;
+  border-bottom-right-radius: 15px 3px;
+  border-bottom-left-radius: 3px 15px;
+  border: solid 3px transparent;
+  border-bottom: dashed 3px #ea95e0;
+  font-family:Crimson Pro (default) ;
+  font-size: 1rem;
+  color: rgba(60, 5, 170, 0.7);
+  width: 70%;
+  margin-bottom: 20px;
+}
+.form_input:focus {
+  outline: none;
+  border: solid 3px #ea95e0;
+}
+
+@media only screen and (min-width: 500px) {
+  .form_input {
+    width: 60%;
+  }
+}
+.button {
+  padding: 0;
+  border: none;
+  transform: rotate(4deg);
+  cursor: pointer;
+  transform-origin: center;
+  font-family: Crimson Pro (default);
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 hsl(66, 86%, 59%);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-image: url('https://plus.unsplash.com/premium_photo-1683880731615-ecbf67bf7a8f?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-color: #f876e9(213, 216, 7, 0.7);
+}
+
+.button span {
+  background: #eb28d1;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid #e0e417;
+}
+
+.button:active,
+.button:focus {
+  transform: translateY(4px);
+  padding-bottom: 0px;
+  outline: 0;
+}
+
+.MyTaskSchedule {
+  text-align: left;
+}
+.MyTaskSchedule li {
+  position: relative;
+  padding: 0.5rem;
+}
+/*.MyTaskSchedule li:hover{
+  text-decoration: underline;
+  
+}*/
+
+.MyTaskSchedule li {
+  text-decoration: underline;
+}
+
+.MyTaskSchedule li:hover {
+  text-decoration-color: #eb28d1;
+}
